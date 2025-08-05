@@ -4,19 +4,23 @@ import About from "./pages/About";
 import Profile from "./pages/Profile";
 import Signup from "./pages/SignUp";
 import SignIn from "./pages/SignIn";
+import Header from "./pages/Header";
 
 
 function App() {
 
 
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/sign-in" element={<SignIn />} />
-      <Route path="/sign-up" element={<Signup />} />
-      <Route path="/profile" element={<Profile />} />
-    </Routes>
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/sign-in" element={<SignIn />} />
+        <Route path="/sign-up" element={<Signup />} />
+        <Route path="/profile" element={<Profile />} />
+      </Routes>
+    </>
   );
 }
 
